@@ -1,0 +1,71 @@
+.date-picker {
+  width: 300px; /* setting the entire calander to fit to this width */
+  border: 1px solid black; /* border for the entire calander */
+  font-family: sans-serif;
+}
+
+.date-picker-header {
+  display: flex;  /* making the contents in the header to be displayed in a row or side by side */
+  justify-content: space-between; /* making the contents in the header to be displayed at the ends of the container */
+  align-items: center; /* making the contents in the header to be displayed at the center of the container */
+  padding: 10px; /* adding some space between the header and the rest of the content */
+  border-bottom: 1px solid #eee; /* adding a border to the bottom of the header */
+}
+
+.date-picker-header input {
+  flex-grow: 1; /* making the input field to take up the remaining space, stretches it to fill up the space between the padding and the button */
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.date-picker-header button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.date-picker-calendar {
+  padding: 10px;
+}
+
+.date-picker-calendar table {
+  width: 100%;
+  /* box-sizing: border-box; when i add the paddding this makes sure the intial width set to the box doesn't change */
+  border-collapse: collapse; /* making the borders of the cells to collapse into one another */
+}
+
+.date-picker-calendar th, .date-picker-calendar td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #eee; /* Add borders to ALL cells (th and td) */
+}
+
+.date-picker-calendar th {
+  font-weight: bold;
+}
+
+.date-picker-calendar td:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.date-picker-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.date-picker-navigation button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.date-picker-navigation span {
+  flex-grow: 1;
+}
